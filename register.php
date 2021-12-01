@@ -31,7 +31,6 @@ $log = new Logger('register');
 
         if ($errors) {
             $_SESSION['errors'] = $errors;
-            // запись ошибки в log файл
             $log->error($errors);
             header('Location:/register.php');
             return;
